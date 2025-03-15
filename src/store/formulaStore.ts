@@ -65,10 +65,9 @@ export const useFormulaStore = create<FormulaState>((set, get) => ({
     })),
   calculateTotal: () => {
     const { tags } = get();
-    let total = 0;
     let currentOp = "+";
-    let stack = [0];
-    let opStack = ["+"];
+    const stack = [0];
+    const opStack = ["+"];
 
     // Don't process if there are no tags or only operands/parentheses
     if (

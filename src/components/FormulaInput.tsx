@@ -140,6 +140,7 @@ export const FormulaInput: React.FC = () => {
       // Check for power expression (x^y)
       const powerMatch = currentInput.match(/^(\d+)\^(\d+)$/);
       if (powerMatch) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const [_, base, exponent] = powerMatch;
         const result = Math.pow(Number(base), Number(exponent));
         addTag({
