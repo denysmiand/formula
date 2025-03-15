@@ -1,10 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { FormulaInput } from "./FormulaInput";
-import {
-  useFormulaStore,
-  type FormulaState,
-  type Tag,
-} from "@/store/formulaStore";
+import { useFormulaStore, type FormulaState } from "@/store/formulaStore";
 import { useAutocomplete } from "@/services/autocompleteService";
 import type { UseQueryResult } from "@tanstack/react-query";
 import type { AutocompleteResult } from "@/services/autocompleteService";
