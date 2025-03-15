@@ -8,7 +8,7 @@ export interface Tag {
   baseValue?: number; // Store the original value for multiplier calculations
 }
 
-interface FormulaState {
+export interface FormulaState {
   currentInput: string;
   tags: Tag[];
   setCurrentInput: (input: string) => void;
